@@ -5,7 +5,7 @@ $('form.ajax').submit(function() {
         type = that.attr('method'),
         data = {};
 
-    that.find('[name]', '[password]').each(function(index, value) {
+    that.find('[password]').each(function(index, value) {
         var that = $(this),
             name = that.attr('name'),
             pass = that.attr('password'),
@@ -14,6 +14,8 @@ $('form.ajax').submit(function() {
         data[name] = value;
         data[pass] = value;
     });
+
+    console.log(data);
 
     $.ajax({
         url : url,
