@@ -34,7 +34,17 @@ ol {
   list-style-type: decimal; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 blockquote > p:before, blockquote > p:after,
 q > p:before, q > p:after {
@@ -135,26 +145,16 @@ img {
         .form-reg form input.submit:hover {
           background: #ef173b; }
 
-.success {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .success div {
-    text-align: center; }
-  .success h1 {
-    display: block;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 50px;
-    display: block;
-    margin-bottom: 50px; }
+div.success {
+  text-align: center; }
+
+h1 {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  display: block;
+  margin-bottom: 50px; }
 
 a {
   width: 130px;
@@ -180,25 +180,15 @@ a {
   a:hover {
     background: #ef173b; }
 
-.error {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .error div {
-    text-align: center; }
-  .error h1 {
-    display: block;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 50px;
-    display: block;
-    margin-bottom: 50px; }
+div.error {
+  text-align: center; }
+
+h1 {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  display: block;
+  margin-bottom: 50px; }
 
 /* End SCSS */

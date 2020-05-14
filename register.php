@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form<</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="success">
@@ -20,7 +20,7 @@
 
         if(mysqli_num_rows($query) > 0) { //check if there is already an entry for that username
             echo"
-                <div>
+                <div class='error'>
                     <h1>Error, username already in use!</h1>
                     <a href='index.php'>Go back</a>
                 </div>
@@ -30,7 +30,7 @@
             $result = mysqli_query($connect, $sql);
             
             echo"
-                <div>
+                <div class='success'>
                     <h1> $user, registration successful!</h1>
                     <a href='index.php'>Go back</a>
                 </div>

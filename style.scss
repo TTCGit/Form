@@ -41,6 +41,10 @@ ol {
 
 body {
 	line-height: 1;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 blockquote > p:before, blockquote > p:after,
@@ -160,23 +164,19 @@ $poppins: 'Poppins', sans-serif;
 	}
 }
 
-.success{
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	div {
-		text-align: center;
-	}
-	h1 {
-		display: block;
-		font-family: $poppins;
-		font-weight: 600;
-		font-size: 50px;
-		display: block;
-		margin-bottom: 50px;
-	}
+
+div.success {
+	text-align: center;
 }
+h1 {
+	display: block;
+	font-family: $poppins;
+	font-weight: 600;
+	font-size: 50px;
+	display: block;
+	margin-bottom: 50px;
+}
+
 
 a {
 	width: 130px;
@@ -194,21 +194,18 @@ a {
     }
 }
 
-.error {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	div {
-		text-align: center;
-	}
-	h1 {
-		display: block;
-		font-family: $poppins;
-		font-weight: 600;
-		font-size: 50px;
-		display: block;
-		margin-bottom: 50px;
-	}
+
+	
+div.error {
+	text-align: center;
 }
+h1 {
+	display: block;
+	font-family: $poppins;
+	font-weight: 600;
+	font-size: 50px;
+	display: block;
+	margin-bottom: 50px;
+}
+
 /* End SCSS */

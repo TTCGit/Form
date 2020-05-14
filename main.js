@@ -20,11 +20,12 @@ $('form.ajax').submit(function() {
         type : type,
         data: data,
         success: function(response) {
-            console.log(response);
+            $('body').html(response);
         }
     });
     
     return false;
 
 });
+
 
