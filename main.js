@@ -1,19 +1,8 @@
 $('form.ajax').submit(function() {
-
-    var that = $(this),
-        url = that.attr('action'),
-        type = that.attr('method'),
-        data = {};
-
-    that.find('[password]').each(function(index, value) {
-        var that = $(this),
-            name = that.attr('name'),
-            pass = that.attr('password'),
-            value = that.val();
-
-        data[name] = value;
-        data[pass] = value;
-    });
+    
+    var url = $(this).attr('action'),
+        type = $(this).attr('method'),
+        data = $(this).serialize();
 
     console.log(data);
 

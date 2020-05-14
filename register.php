@@ -12,7 +12,7 @@
     require 'connect.php';
     
     if(isset($_POST['username']) && isset($_POST['username'])) {
-        $user  = $_POST["username"];
+        $user  = filter_var($_POST["username"],FILTER_SANITIZE_STRING);
         $pass  = $_POST['password'];
         $salt = 'salt_';
         $hash_pass = md5($salt.$pass);
@@ -38,7 +38,6 @@
         }
     }
 ?>
-
 
 </body>
 </html>

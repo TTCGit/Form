@@ -14,7 +14,7 @@
 
     <div id="login" class="form-reg">
         <h2>Registration Form</h2>
-        <form action="register.php" method="post" class="ajax">
+        <form action="register.php" method="POST" class="ajax">
             <label>UserName :</label>
             <input id="name" name="username" type="text" required>
             <label>Password :</label>
