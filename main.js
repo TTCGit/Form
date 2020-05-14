@@ -1,5 +1,3 @@
-
-
 $('form.ajax').submit(function() {
 
     var that = $(this),
